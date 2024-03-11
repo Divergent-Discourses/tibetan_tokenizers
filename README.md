@@ -1,6 +1,6 @@
 # Description
 
-This repository contains a tokenization (word segmentation) utility for Tibetan, based on various external tokenizers. `botok_tokenizer.py` uses [BoTok, a tokenizer developed by OpenPecha](https://github.com/OpenPecha/Botok). Tokenization separates raw text into machine-readable lists of individual words for subsequent NLP tasks. 
+This repository contains a tokenization (word segmentation) utility for Tibetan. It is based on [BoTok, a tokenizer developed by OpenPecha](https://github.com/OpenPecha/Botok). Tokenization separates raw text into machine-readable lists of individual words for subsequent NLP tasks. Botok aims to work on both modern and classical Tibetan and also provides PoS tags for Tibetan. With Botok you have to turn every file into a string, whereas `botok_tokenizer.py` simplifies that process by allowing you to point to a whole folder/directory or a single .txt file. It also selects just the tokenizer element of Botok, rather than the PoS tagger element, which we have not incldued in this utility. To run the tokenizer, place the raw text files in a folder and then run `botok_tokenizer.py`. 
 
 ## Usage
 
